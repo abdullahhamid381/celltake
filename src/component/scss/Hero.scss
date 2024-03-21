@@ -1,0 +1,52 @@
+@import './media.scss';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+.hero-parent-div{
+    background: #EDF0F2;
+    padding: 60px 0 20px 0;
+    @include laptop{
+        background: #EDF0F2;
+        padding: 60px 0 118px 0;
+    }
+    .hero-width{
+        width: 90%;
+        margin: auto;
+        /* display: flex; */
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        @include lg{
+           grid-template-columns: 1fr;
+         
+        }
+        .text{
+h1{
+    font-weight: 800;
+    font-size: 64px;
+    font-family: "Manrope", sans-serif;
+    width: 92%;
+    @include lg{
+        width: 100%;
+        text-align: center;
+    }
+    @include mobile{
+        font-size: 50px;
+    }
+    span{
+        color: #34A853;
+    }
+}
+        }
+        .img{
+            @include lg{
+                width: 70%;
+                margin: auto;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+    
+}

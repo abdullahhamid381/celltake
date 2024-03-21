@@ -1,0 +1,55 @@
+@import './media.scss';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.explore-parent{
+    padding: 80px 0;
+   .explore-width{
+    width: 90%;
+    margin: auto;
+    .title{
+        display: flex;
+        justify-content: center;
+        h1{
+            font-weight: 800;
+            font-size: 40px;
+            color: #212325;
+            font-family: "Manrope", sans-serif;
+        }
+    }
+    .img{
+        padding-top: 50px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        img{
+            width: 100%;
+        }
+    }
+    // .slider{
+    //     .swiper {
+    //         width: 100%;
+    //         height: 100%;
+    //       }
+          
+    //       .swiper-slide {
+    //         text-align: center;
+    //         font-size: 18px;
+    //         background: #fff;
+          
+    //         /* Center slide text vertically */
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //       }
+          
+    //       .swiper-slide img {
+    //         display: block;
+    //         width: 100%;
+    //         height: 100%;
+    //         object-fit: cover;
+    //       }
+          
+    // }
+   }
+}
