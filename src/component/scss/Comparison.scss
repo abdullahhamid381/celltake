@@ -1,0 +1,93 @@
+@import './media.scss';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.comparsion-parent {
+    padding-top: 140px;
+
+    .background {
+        background: #F5F5F5;
+        padding: 80px 0;
+
+        .width {
+            width: 90%;
+            margin: auto;
+
+            .title {
+                display: flex;
+                justify-content: center;
+
+                h1 {
+                    font-family: "Manrope", sans-serif;
+                    font-weight: 800;
+                    font-size: 40px;
+                    color: #212325;
+                }
+            }
+
+            .card {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                padding-top: 80px;
+
+                .padding-inner {
+                    background: linear-gradient(180deg, #dad6ef, white, white, white, white, #d4e7f3);
+                    border-radius: 18px;
+
+                    .card-parent {
+
+
+                        padding: 0px 40px 30px 40px;
+
+                        .name-img {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 30px 0;
+                            align-items: center;
+
+                            .name {
+                                .img {
+                                    width: 80%;
+
+                                    img {
+                                        width: 100%;
+                                    }
+
+                                }
+
+                                p {
+                                    font-weight: 700;
+                                    font-size: 14px;
+                                    color: #8795A2;
+                                    padding-top: 5px;
+                                    font-family: "Manrope", sans-serif;
+                                }
+                            }
+                        }
+
+                        .vs-img {
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .compare-button {
+                            input {
+                                width: 100%;
+                                background: #3B81D8;
+                                border: none;
+                                font-family: "Manrope", sans-serif;
+                                color: white;
+                                padding: 15px 0;
+                                font-weight: 700;
+                                font-size: 16px;
+                                border-radius: 4px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}

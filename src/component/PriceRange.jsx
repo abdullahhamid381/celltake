@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
-import { exploreimg } from './Data';
+import { PriceRangedata, exploreimg } from './Data';
 const PriceRange= () => {
   return (
    <div className="price-range-parent">
@@ -24,11 +24,11 @@ const PriceRange= () => {
 
     <div className="slider">
     <Swiper
-        slidesPerView={1}
+        slidesPerView={2}
         spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
+        // pagination={{
+        //   clickable: true,
+        // }}
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -42,15 +42,19 @@ const PriceRange= () => {
             slidesPerView: 5,
             spaceBetween: 50,
           },
+          1800: {
+            slidesPerView: 6,
+            spaceBetween: 50,
+          },
         }}
         modules={[Pagination]}
         className="mySwiper"
       >
         {
-            exploreimg.map((item)=>{
+            PriceRangedata.map((item)=>{
                 return(
                     <SwiperSlide>
-                        <img src={item.img} alt="" />
+                     <button>{item.h1}</button>
                     </SwiperSlide>
                 )
             })

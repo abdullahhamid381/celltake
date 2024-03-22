@@ -24,3 +24,26 @@ export const exploreimg=[
         img:google,
     },
 ]
+
+
+export const PriceRangedata =[
+    {
+        h1:'under 5k',
+    },
+    {
+        h1:'under 10k',
+    },
+    {
+        h1:'under 20k',
+    },
+    {
+        h1:'under 25k',
+    },
+    {
+        h1:'under 35k',
+    },
+    {
+        h1:'under 40k',
+    },
+    
+]
