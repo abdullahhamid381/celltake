@@ -6,6 +6,7 @@ import WantSell from './component/WantSell'
 import Brand from './component/Brand'
 import PriceRange from './component/PriceRange'
 import Comparsion from './component/Comparsion'
+import Footer from './component/Footer'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Brand/>
       <PriceRange/>
       <Comparsion/>
+      <Footer/>
     </div>
   )
 }
