@@ -4,6 +4,11 @@ import one from './pics/one.png'
 import vivo from './pics/vivo.png'
 import xia from './pics/xia.png'
 import google from './pics/google.png'
+
+import samsungtext from './pics/samsungtext.png'
+import samsungmobile from './pics/samsungmobile.png'
+import vivomobile from './pics/vivomobile.png'
+import vivotext from './pics/vivotext.png'
 export const exploreimg=[
     {
         img:apple,
@@ -46,4 +51,34 @@ export const PriceRangedata =[
         h1:'under 40k',
     },
     
+]
+
+
+
+
+export const comparisondata=[
+    {
+        imgtextsamsung:samsungtext,
+        imgtextvivo:vivotext,
+        imgvivo:vivomobile,
+        imgsamsung:samsungmobile,
+    },
+    {
+        imgtextsamsung:samsungtext,
+        imgtextvivo:vivotext,
+        imgvivo:vivomobile,
+        imgsamsung:samsungmobile,
+    },
+    {
+        imgtextsamsung:samsungtext,
+        imgtextvivo:vivotext,
+        imgvivo:vivomobile,
+        imgsamsung:samsungmobile,
+    },
+    {
+        imgtextsamsung:samsungtext,
+        imgtextvivo:vivotext,
+        imgvivo:vivomobile,
+        imgsamsung:samsungmobile,
+    },
 ]
