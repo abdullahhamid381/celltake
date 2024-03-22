@@ -96,8 +96,8 @@ function Navbar() {
               </div>
             </li>
          </div>
-           <div style={{paddingBottom:'20px',width:'100%'}}>
-           <li className="nav-item" style={{width:'93%'}}>
+           <div  className='hide-item-post' >
+           <li className="nav-item hide-item-post">
              
              <div className="login-navbar hide-post" >
         

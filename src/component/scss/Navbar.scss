@@ -125,6 +125,9 @@
     padding-top: 11px;
     gap: 20px;
     align-items: center;
+    @include lg{
+      gap:10px;
+    }
   }
 
   .nav-links {
@@ -154,7 +157,17 @@
   .fa-code {
     margin-left: 1rem;
   }
-
+.hide-item-post{
+@include lg{
+  padding-bottom: 20px;
+  width: 100%;
+}
+  .nav-item{
+    @include lg{
+      width: 93%;
+    }
+  }
+}
   .nav-item {
     line-height: 40px;
     margin-right: 1rem;
@@ -164,12 +177,19 @@
       display: none;
 
       @include lg {
-        display: block;
+     display: flex;
+     align-items: center;
+     justify-content: center;
         margin-left: 30px;
       }
 
       input {
         padding: 00px;
+        font-size: 18px;
+      }
+      span{
+        font-size: 18px;
+        padding-top: 5px;
       }
     }
 
