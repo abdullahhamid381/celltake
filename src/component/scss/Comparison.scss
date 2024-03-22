@@ -28,6 +28,9 @@
                     font-weight: 800;
                     font-size: 40px;
                     color: #212325;
+                    @include mobile{
+                        font-size: 28px;
+                    }
                 }
             }
 
@@ -63,6 +66,9 @@
                         border-radius: 80px;
                         color: #3B81D8;
                         font-family: "Manrope", sans-serif;
+                        @include mobile{
+                            font-size: 14px;
+                        }
                     }
                 }
 

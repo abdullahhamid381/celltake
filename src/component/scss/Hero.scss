@@ -26,12 +26,15 @@ h1{
     font-size: 64px;
     font-family: "Manrope", sans-serif;
     width: 92%;
+    @include laptop{
+        font-size: 60px;
+    }
     @include lg{
         width: 100%;
         text-align: center;
     }
     @include mobile{
-        font-size: 50px;
+        font-size: 32px;
     }
     span{
         color: #34A853;

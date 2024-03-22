@@ -135,6 +135,9 @@ padding-top: 11px;
       text-decoration: none;
       color: black;
       font-family: "Manrope", sans-serif;
+      @include laptop{
+        font-size: 13px;
+      }
 
 }
   .fa-code {
@@ -153,6 +156,9 @@ padding-top: 11px;
       font-weight: 700;
       font-size: 16px;
       border-radius: 4px;
+      @include laptop{
+        font-size: 13px;
+      }
     }
   }
 
@@ -270,6 +276,7 @@ padding-top: 11px;
     margin-top: 10px;
     background: #34A853;
     border-radius: 4px;
+   
     @include sm6{
       padding: 10px 15px;
     }
@@ -296,8 +303,11 @@ color: white;
 font-family: "Manrope", sans-serif;
 font-weight: 700;
 font-size: 16px;
-@include mobile{
+@include laptop{
   font-size: 13px;
+}
+@include mobile{
+  font-size: 14px;
 }
 }
 

@@ -59,7 +59,7 @@ const SearchMobile = () => {
           </Select>
         </FormControl>
       ))}
-      <Button variant="contained" onClick={handleSearch}>Search Mobiles</Button>
+      <Button variant="contained" onClick={handleSearch} className='search'>Search Mobiles</Button>
     </Box>
         </div>
       </div>

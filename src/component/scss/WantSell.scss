@@ -18,6 +18,9 @@
         grid-template-columns: 1fr 1fr;
         place-content: center;
       place-items: center;
+      @include laptop{
+        padding: 50px;
+      }
 
       @include lg{
         padding: 30px 30px 0 30px;
@@ -33,6 +36,9 @@ h1{
     font-size: 40px;
     color: #9D2161;
     font-family: "Manrope", sans-serif;
+    @include mobile{
+      font-size: 28px;
+    }
 }
 .points{
     padding-top: 30px;
@@ -41,6 +47,9 @@ h1{
         font-weight: 500;
         font-family: "Manrope", sans-serif;
         padding: 5px 0;
+        @include mobile{
+          font-size: 16px;
+        }
         
     }
 }
@@ -57,6 +66,9 @@ h1{
     border-radius: 4px;
   @include lg{
     width: 30%;
+  }
+  @include mobile{
+    font-size: 14px;
   }
   
 

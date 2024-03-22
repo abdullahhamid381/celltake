@@ -17,6 +17,9 @@
             font-size: 40px;
             color: #212325;
             font-family: "Manrope", sans-serif;
+            @include mobile{
+                font-size: 28px;
+            }
         }
     }
     .img{
