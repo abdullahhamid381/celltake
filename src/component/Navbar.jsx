@@ -17,11 +17,11 @@ function Navbar() {
             {/* <i className={click ? "fas fa-times" : "fas fa-bars"}></i> */}
 
             {click ? (
-              <span className="icon">
+              <span className="icon" style={{color:'black'}}>
                      <AiOutlineClose />{" "}
               </span>
             ) : (
-              <span className="icon">
+              <span className="icon" >
                 <GiHamburgerMenu />
               </span>
             )}
@@ -36,6 +36,23 @@ function Navbar() {
           
        <div className="button-link">
        <ul className={click ? "nav-menu active" : "nav-menu"}>
+       <div className="nav-icon" onClick={handleClick}>
+            {/* <i className={click ? "fas fa-times" : "fas fa-bars"}></i> */}
+
+            {click ? (
+              <span className="icon" style={{color:'black'}}>
+                     <AiOutlineClose />{" "}
+              </span>
+            ) : (
+              <span className="icon" >
+                <GiHamburgerMenu />
+              </span>
+            )}
+          </div>
+          <div  className="nav-logo hide-logo">
+            <img src="./images/logo.png" alt="" />
+            
+          </div>
             <li className="nav-item">
               <div
                
@@ -59,7 +76,8 @@ function Navbar() {
               </Link>
               </div>
             </li>
-            <li className="nav-item">
+         <div style={{display:'flex'}}>
+         <li className="nav-item">
               <div
                 activeClassName="active"
                 className="nav-links"
@@ -77,6 +95,18 @@ function Navbar() {
                 <input type="button" value={"Sign up"} />
               </div>
             </li>
+         </div>
+           <div style={{paddingBottom:'20px',width:'100%'}}>
+           <li className="nav-item" style={{width:'93%'}}>
+             
+             <div className="login-navbar hide-post" >
+        
+        <input type="button" value={'Post an ad'} />
+        <span><FaLongArrowAltRight /></span>
+                  </div>
+          
+         </li>
+           </div>
        
           </ul>
           <div className="login-navbar">
