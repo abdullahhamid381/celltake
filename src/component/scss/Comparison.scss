@@ -3,12 +3,17 @@
 
 .comparsion-parent {
     padding-top: 140px;
+    
+    position: relative;
 @include mobile{
     padding-top: 60px;
 }
     .background {
         background: #F5F5F5;
-        padding: 80px 0;
+        padding: 80px 0 140px 0;
+        @include mobile{
+            padding: 80px 0 240px 0;
+        }
 
         .width {
             width: 90%;
@@ -150,6 +155,67 @@
                     }
                 }
 
+            }
+
+            .compare{
+                position: absolute;
+                bottom: -50px;
+                z-index: 99999;
+                left: 0;
+               @include mobile{
+                position: absolute;
+                bottom: -130px;
+                z-index: 99999;
+                left: 0;
+            
+               }
+                .grid{
+                    background: white;
+                    box-shadow: 0px 0px 16px 0px #00000026;
+                    padding: 30px;
+                    border-radius: 8px;
+                    display: grid;
+                    gap: 20px;
+                    width: 80%;
+                    margin: auto;
+                    place-content: center;
+                    place-items: center;
+                    grid-template-columns: 12fr 4fr 12fr 4fr;
+
+                    @include mobile{
+                        grid-template-columns: 1fr;
+                        width: 70%;
+                    }
+                    .first{
+                        width: 100%;
+                        .box{
+                            width: 100%;
+                        background: #fbfcfe !important;
+                        }
+                    }
+                    .vs{
+                        @include mobile{
+                            width: 50%;
+                        }
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .button{
+                        width: 100%;
+                        input{
+                            width: 100%;
+                            background: #3B81D8;
+                            padding: 18px;
+                            border-radius: 4px;
+                            border: none;
+                            color: white;
+                            font-weight: 700;
+                            font-size: 16px;
+                            font-family: "Manrope", sans-serif;
+                        }
+                    }
+                }
             }
         }
     }
