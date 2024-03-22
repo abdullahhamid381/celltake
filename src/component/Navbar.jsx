@@ -40,7 +40,7 @@ function Navbar() {
                 {/* <i className={click ? "fas fa-times" : "fas fa-bars"}></i> */}
 
                 {click ? (
-                  <span className="icon" style={{ color: 'black' }}>
+                  <span className="icon" style={{ color: '#3B81D8',fontWeight:'800', borderRadius:'80px' }}>
                     <AiOutlineClose />{" "}
                   </span>
                 ) : (
@@ -53,7 +53,7 @@ function Navbar() {
                 <img src="./images/logo.png" alt="" />
 
               </div>
-              <li className="nav-item">
+              <li className="nav-item browse">
                 <div
 
                   activeClassName="active"
@@ -65,10 +65,10 @@ function Navbar() {
                   </Link>
                 </div>
               </li>
-              <li className="nav-item">
+              <li className="nav-item ">
                 <div
                   activeClassName="active"
-                  className="nav-links"
+                  className="nav-links browse"
                   onClick={handleClick}
                 >
                   <Link to='' className="link">
@@ -76,7 +76,7 @@ function Navbar() {
                   </Link>
                 </div>
               </li>
-              <div style={{ display: 'flex' }}>
+              <div className="hide-sign">
                 <li className="nav-item">
                   <div
                     activeClassName="active"
