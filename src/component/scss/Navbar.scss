@@ -79,15 +79,16 @@
 
 
     img {
-      width: 100%;
+      width: 72%;
 
       @include sm6 {
         width: 78%;
       }
 
       @include mobile {
-        width: 60%;
+        width: 51%;
         margin-left: 15px;
+        margin-top: 18px;
     
       }
 
@@ -121,15 +122,33 @@
   }
 
   .nav-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    list-style: none;
+    text-align: center;
+    padding-top: 14px;
+  
+    align-items: center;
+   @include mobile{
     display: flex;
     list-style: none;
     text-align: center;
     padding-top: 11px;
   
     align-items: center;
+   }
 
     @include lg {
       gap: 0px;
+    }
+
+    .browse-flex{
+      display: flex;
+      gap: 0 15px;
+      @include lg{
+        flex-direction: column;
+      }
+      
     }
   }
 
@@ -222,11 +241,21 @@
     input {
       border: 2px solid #3B81D8;
       color: #3B81D8;
-      padding: 15px 0;
+      padding: 16px 15px;
       font-family: "Manrope", sans-serif;
       font-weight: 700;
       font-size: 16px;
       border-radius: 4px;
+@include mobile{
+  border: 2px solid #3B81D8;
+  color: #3B81D8;
+  padding: 15px 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
 
       @include laptop {
         font-size: 13px;
@@ -328,7 +357,8 @@
 
         @include mobile {
           padding-left: 50px;
-          padding-top: 10px;
+          /* padding-top: 10px; */
+          margin-top: -10px;
         }
 
       }

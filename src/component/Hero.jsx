@@ -5,8 +5,10 @@ const Hero = () => {
    <div className="hero-parent-div">
    <div className="hero-width">
    <div className='text'>
-    <h1>Discover Pre-Loved Mobile Gems Across  <span>Pakistan</span></h1>
-    
+    <h1>Discover Pre-Loved Mobile Gems Across  <span>Pakistan <div className="img">
+      <img src="./images/world-flag.png" alt="" />
+    </div></span>   </h1>
+  
     </div>
     <div className="img">
         <img src="./images/hero.png" alt="" />

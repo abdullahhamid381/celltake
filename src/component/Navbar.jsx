@@ -53,7 +53,8 @@ function Navbar() {
                 <img src="./images/logo.png" alt="" />
 
               </div>
-              <li className="nav-item browse">
+            <div className="browse-flex">
+            <li className="nav-item browse">
                 <div
 
                   activeClassName="active"
@@ -76,6 +77,7 @@ function Navbar() {
                   </Link>
                 </div>
               </li>
+            </div>
               <div className="hide-sign">
                 <li className="nav-item">
                   <div

@@ -24,7 +24,7 @@ const PriceRange= () => {
 
     <div className="slider">
     <Swiper
-        slidesPerView={2}
+        slidesPerView={3}
         spaceBetween={10}
         // pagination={{
         //   clickable: true,
@@ -40,7 +40,7 @@ const PriceRange= () => {
           },
           1024: {
             slidesPerView: 5,
-            spaceBetween: 50,
+            spaceBetween: 30,
           },
           1800: {
             slidesPerView: 6,

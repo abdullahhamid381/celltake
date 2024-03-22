@@ -21,7 +21,13 @@
          
         }
         .text{
+            margin-top: -60px;
+            @include lg{
+                margin-top: 0;
+            }
+         
 h1{
+    
     font-weight: 800;
     font-size: 64px;
     font-family: "Manrope", sans-serif;
@@ -37,7 +43,28 @@ h1{
         font-size: 32px;
     }
     span{
-        color: #34A853;
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+        color: #237923;
+        @include mobile{
+            display: flex;
+            align-items: center;
+            gap: 0 10px;
+            color: #237923;
+            padding-left: 90px;
+        
+        }
+       .img{
+        width: 100%;
+        display: flex;
+        img{
+            width: 15%;
+            @include mobile{
+                width: 30%;
+            }
+        }
+       }
     }
 }
         }
