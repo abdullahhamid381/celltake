@@ -7,13 +7,22 @@
     background: #F7E6EF;
     margin-top: 180px;
     border-radius: 20px;
+    margin-bottom: 40px;
     .back{
-        padding: 40px;
+        padding: 60px;
+        @include lg{
+            padding: 30px;
+        }
         .width{
             .logo-icon{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                @include lg{
+                    flex-direction: column;
+                    gap: 40px;
+                    align-items: center;
+                }
                 .logo{
                     img{
                         width: 100%;
@@ -24,6 +33,10 @@
                     display: flex;
                    gap: 0 20px;
                     align-items: center;
+                    @include mobile{
+                        gap: 0 10px;
+                     
+                    }
                     span{
 font-size: 18px;
 font-weight: 700;
@@ -37,6 +50,52 @@ color: #AC97A2;
                     h6{
                         font-size: 18px;
                         color: #9D2161;
+                    }
+                }
+            }
+            .grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                place-content: center;
+              padding-top: 60px;
+                gap: 105px;
+                @include lg{
+                    grid-template-columns: 1fr ;
+                    gap: 40px;
+                }
+                .title{
+                   h1{
+                    font-family: "Manrope", sans-serif;
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: #AC97A2;
+                    @include mobile{
+                        font-size: 16px;
+                    }
+                   }
+                }
+                .list{
+                    padding-top: 15px;
+                    .icon{
+                        padding: 10px 0;
+                        h3{
+                            color: #9D2161;
+                            font-size: 14px;
+                            font-family: "Manrope", sans-serif;
+                        }
+                    }
+                    #flex{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        span{
+                            color: #9D2161;
+                        }
+                        h3{
+                            font-size: 14px;
+                            font-family: "Manrope", sans-serif;
+                            color: #9D2161;
+                        }
                     }
                 }
             }
