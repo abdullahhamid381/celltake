@@ -93,6 +93,9 @@
                 width: 100%;
                 border-radius: 4px;
                 background: #3B81D8;
+                @include laptop{
+                    padding: 17px 5px;
+                }
                 input{
                     width: 100%;
               background: none;
@@ -102,10 +105,12 @@
               font-weight: 700;
               font-family: "Manrope", sans-serif;
               font-size: 16px;
+              @include laptop{
+                    
+                font-size: 13px !important;
+            }
                 }
-                @include laptop{
-                    font-size: 13px;
-                }
+              
             }
         }
     }

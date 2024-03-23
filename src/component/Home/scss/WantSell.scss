@@ -65,7 +65,9 @@
             font-weight: 500;
             font-family: "Manrope", sans-serif;
             padding: 5px 0;
-
+@include laptop{
+  font-size: 21px;
+}
             @include mobile {
               font-size: 14px;
             }
