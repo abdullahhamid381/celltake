@@ -3,9 +3,15 @@
 .topsell-parent{
     padding-top: 180px;
     position: relative;
+    @include mobile{
+      padding-top: 80px;
+    }
     .back{
         background: #F5F5F5;
         padding: 80px 0;
+        @include mobile{
+          padding: 40px 0 40px 0 ;
+        }
         .width{
             width: 100%;
             margin: auto;
@@ -42,9 +48,10 @@ font-family: "Manrope", sans-serif;
               
                
                 @include mobile{
-                    padding-top: 20px;
-                    padding-left: 20px;
-                    width: 100%;
+                  padding-top: 20px;
+                  padding-left: 0;
+                  width: 90%;
+                  margin: auto;
                  
                 }
                 .swiper {

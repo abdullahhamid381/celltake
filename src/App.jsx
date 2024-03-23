@@ -19,9 +19,9 @@ const App = () => {
       <Navbar/>
       <Hero/>
       <SearchMobile/>
-   
- <TopSell/>
       <WantSell/>
+ <TopSell/>
+    
       <Brand/>
       <PriceRange/>
       <Comparsion/>

@@ -18,12 +18,18 @@
         .width {
             width: 90%;
             margin: auto;
+            @include mobile{
+                width: 100%;
+            }
 
             .title {
                 display: flex;
                 justify-content: center;
+
 @include mobile{
     display: flex;
+    width: 90%;
+    margin: auto;
     justify-content: start;
 }
                 h1 {
@@ -214,7 +220,7 @@
               
                     @include mobile{
                         grid-template-columns: 1fr;
-                        width: 70%;
+                        width: 75%;
                         gap: 30px;
                     }
                     .first{
