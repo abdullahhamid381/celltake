@@ -39,7 +39,7 @@ const PriceRange= () => {
             spaceBetween: 40,
           },
           1024: {
-            slidesPerView: 5,
+            slidesPerView: 6,
             spaceBetween: 30,
           },
           1800: {

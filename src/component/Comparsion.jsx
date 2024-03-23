@@ -34,6 +34,11 @@ const Comparsion = () => {
 
 
 
+    const [agetwo, setAgetwo] = React.useState('');
+
+    const handleChangetwo = (event) => {
+        setAgetwo(event.target.value);
+    };
     const [age, setAge] = React.useState('');
 
     const handleChange = (event) => {
@@ -95,7 +100,7 @@ const Comparsion = () => {
                                                 <div className='card-parent'>
                                                     <div className="name-img">
                                                         <div className="name">
-                                                            <div className="img">
+                                                            <div className="img samsungss">
                                                                 <img src="./images/samsungtext.png" alt="" />
                                                             </div>
                                                             <p>Samsung Galaxy S24 Ultra</p>
@@ -143,39 +148,41 @@ const Comparsion = () => {
                         <div className="first">
                         <Box className="box">
                                 <FormControl fullWidth>
-                                    <InputLabel id="demo-simple-select-label">Age</InputLabel>
-                                    <Select
+                                    <InputLabel id="demo-simple-select-label">Select model</InputLabel>
+                                    <Select 
                                         labelId="demo-simple-select-label"
                                         id="demo-simple-select"
                                         value={age}
                                         label="Age"
                                         onChange={handleChange}
                                     >
-                                        <MenuItem value={10}>Ten</MenuItem>
-                                        <MenuItem value={20}>Twenty</MenuItem>
-                                        <MenuItem value={30}>Thirty</MenuItem>
+                                        <MenuItem value={10} style={{paddingTop:'50px'}}>Samsung</MenuItem>
+                                        <MenuItem value={10}>Apple</MenuItem>
+                                        <MenuItem value={10}>Vivo</MenuItem>
+                                     
                                     </Select>
                                 </FormControl>
                             </Box>
                         </div>
                         <div className="vs">
+                            <img src="./images/vs.png" alt="" className='hide'/>
                             <img src="./images/vstwo.png" alt="" />
                         </div>
 
                         <div className="first">
                         <Box className="box">
                                 <FormControl fullWidth>
-                                    <InputLabel id="demo-simple-select-label">Age</InputLabel>
+                                    <InputLabel id="demo-simple-select-label">Select model</InputLabel>
                                     <Select
                                         labelId="demo-simple-select-label"
                                         id="demo-simple-select"
-                                        value={age}
+                                        value={agetwo}
                                         label="Age"
-                                        onChange={handleChange}
+                                        onChange={handleChangetwo}
                                     >
-                                        <MenuItem value={10}>Ten</MenuItem>
-                                        <MenuItem value={20}>Twenty</MenuItem>
-                                        <MenuItem value={30}>Thirty</MenuItem>
+                                      <MenuItem value={10} style={{paddingTop:'50px'}}>Samsung</MenuItem>
+                                        <MenuItem value={10}>Apple</MenuItem>
+                                        <MenuItem value={10}>Vivo</MenuItem>
                                     </Select>
                                 </FormControl>
                             </Box>

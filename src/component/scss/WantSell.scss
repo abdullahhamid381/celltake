@@ -15,7 +15,7 @@
     background: linear-gradient(73deg, #eea2c9, #eea2c9, #bd558a, #bd558a);
     border-radius: 20px;
 @include lg{
-  background: linear-gradient(232deg, #eea2c9, #eea2c9, #bd558a);
+  background: linear-gradient(203deg, #eea2c9, #eea2c9, #bd558a, #bd558a);
 }
     .flex {
       padding: 50px 50px 0 50px;
@@ -50,6 +50,7 @@
 
           @include mobile {
             font-size: 28px;
+            width: 77%;
           }
         }
 

@@ -115,16 +115,31 @@
 
 
                         padding: 0px 40px 30px 40px;
+@include mobile{
+    padding: 0px 20px 30px 20px;
 
+}
                         .name-img {
                             display: flex;
                             justify-content: space-between;
                             padding: 30px 0;
                             align-items: center;
+@include mobile{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
 
+}
                             .name {
+                                .samsungss{
+                                    @include mobile{
+                                        width: 60% !important;
+                                    }
+                                }
                                 .img {
                                     width: 80%;
+                                    
 
                                     img {
                                         width: 100%;
@@ -138,6 +153,9 @@
                                     color: #8795A2;
                                     padding-top: 5px;
                                     font-family: "Manrope", sans-serif;
+                                    @include mobile{
+                                        font-size: 10px;
+                                    }
                                 }
                             }
                         }
@@ -159,6 +177,9 @@
                                 font-weight: 700;
                                 font-size: 16px;
                                 border-radius: 4px;
+                                @include mobile{
+                                    padding: 12px 0;
+                                }
                             }
                         }
                     }
@@ -194,6 +215,7 @@
                     @include mobile{
                         grid-template-columns: 1fr;
                         width: 70%;
+                        gap: 30px;
                     }
                     .first{
                         width: 100%;
@@ -204,14 +226,26 @@
                     }
                     .vs{
                         @include mobile{
-                            width: 50%;
+                            width: 100%;
+                        }
+                        .hide{
+                            display: none;
+                            @include mobile{
+                                display: block;
+                            }
                         }
                         img{
                             width: 100%;
+                        @include mobile{
+                            display: none;
+                        }
                         }
                     }
                     .button{
                         width: 100%;
+                        @include mobile{
+                            margin-top: -10px;
+                        }
                         input{
                             width: 100%;
                             background: #3B81D8;
@@ -222,6 +256,9 @@
                             font-weight: 700;
                             font-size: 16px;
                             font-family: "Manrope", sans-serif;
+                            @include mobile{
+                                padding: 12px;
+                            }
                         }
                     }
                 }
