@@ -6,15 +6,20 @@ export const SwiperNavButtons = () => {
 
   return (
     <div className="swiper-nav-btns">
-   <div>
-    <span onClick={() => swiper.slidePrev()}>Next</span>
-   <button ><IoCaretForwardOutline /></button>
-   </div>
-      <span>View more</span>
-      <div>
-        <span onClick={() => swiper.slideNext()}>back</span>
-      <button ><IoCaretBack /></button>
+      <div className='icon'>
+        <span onClick={() => swiper.slideNext()}><IoCaretBack /></span>
+    
       </div>
+   
+   <div>
+   <div className="view">
+   <h3>View more</h3>
+   </div>
+   </div>
+      <div className='icon'>
+    <span onClick={() => swiper.slidePrev()}><IoCaretForwardOutline /></span>
+
+   </div>
     </div>
   );
 };

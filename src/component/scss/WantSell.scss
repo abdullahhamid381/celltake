@@ -39,6 +39,9 @@
 
       .text {
         margin-top: -65px;
+        @include laptop{
+          margin-top: 0;
+        }
         @include lg{
           margin-top: 0;
         }

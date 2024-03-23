@@ -5,6 +5,9 @@ const Hero = () => {
    <div className="hero-parent-div">
    <div className="hero-width">
    <div className='text'>
+    <div className="img">
+      <img src="./images/text.png" alt="" />
+    </div>
     <h1>Discover Pre-Loved Mobile Gems Across  <span>Pakistan <div className="img">
       <img src="./images/world-flag.png" alt="" />
     </div></span>   </h1>

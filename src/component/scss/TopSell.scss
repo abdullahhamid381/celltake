@@ -9,12 +9,7 @@
         .width{
             width: 100%;
             margin: auto;
-            @include mobile{
-                
-    width: 90%;
-    margin: auto;
-
-            }
+         
             .width-button-title{
                 width: 85%;
             padding-left: 75px;
@@ -25,9 +20,13 @@
             }
             .title{
                @include mobile{
-                width: 84%;
+                width: 90%;
+                margin: auto;
                }
                 h1{
+                  @include mobile{
+                    width: 84%;
+                   }
 font-weight: 800;
 font-size: 40px;
 color: #212325;
@@ -44,6 +43,7 @@ font-family: "Manrope", sans-serif;
                
                 @include mobile{
                     padding-top: 20px;
+                    padding-left: 20px;
                     width: 100%;
                  
                 }
@@ -122,6 +122,8 @@ font-family: "Manrope", sans-serif;
                 @include mobile{
                     padding-left: 0;
                     padding-top: 30px;
+                    width: 90%;
+                    margin: auto;
                 }
                 .card-parent{
                     .img{
@@ -224,22 +226,31 @@ font-family: "Manrope", sans-serif;
               .swiper-nav-btns  {
                 display: flex;
                 align-items: center;
-            div{
-                button{
-                    width: 60px;
-                    height: 50px;
-                    border-radius: 50px;
-                    border: none;
-                    outline: none;
-                  
-                    color: #fff;
-                    margin: 0px 0.5rem;
-                    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-                    margin-top: 30px;
-                    transition: all .5s;
+                gap: 0 10px;
+                padding-top: 20px;
+            .icon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            border: 1px solid #c4c4c4;
+            border-radius: 80px;
+            width: 22px;
+            height: 22px;
+            padding: 10px;
                     span{
-                        color:'black'
+                        color:'black';
+                        font-size: 18px;
                     }
+                
+            }
+            .view{
+                display: flex;
+                align-items: center;
+                h3{
+                    font-weight: 700;
+                    font-size: 16px;
+                    font-family: "Manrope", sans-serif;
+                    color: #3B81D8;
                 }
             }
               }
