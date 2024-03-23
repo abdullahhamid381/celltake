@@ -17,7 +17,7 @@
             margin: auto;
          
             .width-button-title{
-                width: 85%;
+                width: 91%;
             padding-left: 75px;
             @include mobile{
                 padding-left: 0;
@@ -25,6 +25,43 @@
             }
             }
             .title{
+display: flex;
+justify-content: space-between;
+align-items: center;
+              .swiper-nav-btns  {
+                display: flex;
+                align-items: center;
+                gap: 0 10px;
+                padding-top: 0px;
+                @include lg{
+                  display: none;
+                }
+            .icon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            border: 1px solid #c4c4c4;
+            border-radius: 80px;
+            width: 22px;
+            height: 22px;
+            padding: 10px;
+                    span{
+                        color:'black';
+                        font-size: 18px;
+                    }
+                
+            }
+            .view{
+                display: flex;
+                align-items: center;
+                h3{
+                    font-weight: 700;
+                    font-size: 16px;
+                    font-family: "Manrope", sans-serif;
+                    color: #3B81D8;
+                }
+            }
+              }
                @include mobile{
                 width: 90%;
                 margin: auto;
@@ -43,7 +80,7 @@ font-family: "Manrope", sans-serif;
                 }
             }
             .slider-button{
-            
+            width: 85%;
                 padding-top: 50px;
               
                
@@ -92,7 +129,7 @@ font-family: "Manrope", sans-serif;
                           border: none;
                           padding: 15px 10px;
                           font-weight: 600;
-                          font-size: 8px;
+                          font-size: 7px;
                           border-radius: 80px;
                           color: #3B81D8;
                           font-family: "Manrope", sans-serif;
@@ -247,6 +284,10 @@ font-family: "Manrope", sans-serif;
                 align-items: center;
                 gap: 0 10px;
                 padding-top: 20px;
+                display: none;
+                @include lg{
+                  display: flex;
+                }
             .icon{
                 display: flex;
                 align-items: center;

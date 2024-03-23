@@ -24,6 +24,9 @@ function App() {
   <div className="width-button-title">
   <div className="title">
   <h1>Top Selling mobile phones</h1>
+  <div>
+    <SwiperNavButtons/>
+  </div>
       </div>
       <div className="slider-button">
     <Swiper
