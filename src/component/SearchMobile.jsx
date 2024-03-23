@@ -106,7 +106,9 @@ const SearchMobile = () => {
                   <div className="range-min-max" style={{ display: 'flex', width: '95%', gap: '10px', margin: 'auto' }}>
                     <Box style={{ width: '100%' }} >
                       <FormControl fullWidth>
-                        <InputLabel id="demo-simple-select-label">Min</InputLabel>
+                       <div>
+                       <InputLabel id="demo-simple-select-label">Min</InputLabel>
+                       </div>
                         <Select
                           labelId="demo-simple-select-label"
                           id="demo-simple-select"
@@ -114,7 +116,7 @@ const SearchMobile = () => {
                           label="Age"
                           onChange={handleChangeminrange}
                         >
-                          <MenuItem value={10}>20,000</MenuItem>
+                          <MenuItem value={10}>20,000 </MenuItem>
                           <MenuItem value={20}>30,000</MenuItem>
                           <MenuItem value={30}>40,0000</MenuItem>
                         </Select>
