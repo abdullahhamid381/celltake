@@ -212,12 +212,14 @@
                     border-radius: 8px;
                     display: grid;
                     gap: 20px;
-                    width: 80%;
+                    width: 77%;
                     margin: auto;
                     place-content: center;
                     place-items: center;
                     grid-template-columns: 12fr 4fr 12fr 4fr;
-              
+              @include laptop{
+                width: 75%;
+              }
                     @include mobile{
                         grid-template-columns: 1fr;
                         width: 75%;

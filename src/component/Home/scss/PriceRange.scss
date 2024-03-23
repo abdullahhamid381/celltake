@@ -66,6 +66,17 @@
                 border-radius: 80px;
                 color: #3B81D8;
                 font-family: "Manrope", sans-serif;
+                @include laptop{
+                    width: 100%;
+    background: #fbfdfe;
+    border: 1px solid #aecbef;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 80px;
+    color: #3B81D8;
+    font-family: "Manrope", sans-serif;
+                }
                 @include mobile{
                     font-size: 12px;
                     padding: 12px 20px;
