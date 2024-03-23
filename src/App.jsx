@@ -8,12 +8,17 @@ import PriceRange from './component/PriceRange'
 import Comparsion from './component/Comparsion'
 import Footer from './component/Footer'
 
+
+
+
 const App = () => {
   return (
     <div>
       <Navbar/>
       <Hero/>
       <SearchMobile/>
+   
+ 
       <WantSell/>
       <Brand/>
       <PriceRange/>
