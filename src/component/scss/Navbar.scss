@@ -76,6 +76,17 @@
     flex-grow: 1;
 
     gap: 10px;
+    @include lg{
+      color: #f5b921;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    flex-grow: 1;
+    gap: 10px;
+    padding-left: 30px;
+    padding-top: 10px;
+    }
 
 
     img {
@@ -88,7 +99,7 @@
       @include mobile {
         width: 51%;
         margin-left: 15px;
-        margin-top: 18px;
+        margin-top: 10px;
     
       }
 
@@ -188,6 +199,9 @@
 
     .nav-item {
       @include lg {
+        width: 98%;
+      }
+      @include mobile{
         width: 95%;
       }
     }
@@ -196,6 +210,16 @@
   display: flex;
   width: 95%;
   margin: auto;
+  @include lg{
+    display: flex;
+    width: 98%;
+    margin: auto;
+  }
+  @include mobile{
+    display: flex;
+    width: 95%;
+    margin: auto;
+  }
   .nav-item{
     width:100% ;
     .nav-links{
@@ -319,7 +343,7 @@
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 1;
-
+top: 0;
       @include mobile {
         top: 0px;
       }
@@ -329,17 +353,17 @@
         color: #f5b921;
         align-items: center;
         display: block;
-
         cursor: pointer;
         text-decoration: none;
         font-size: 2rem;
         flex-grow: 1;
-
         gap: 10px;
+        padding-left: 10p;
+        padding-left: 100px;
 
 
         img {
-          width: 100%;
+          width: 90%;
 
           @include sm6 {
             width: 78%;
@@ -373,7 +397,12 @@
       padding: 1.5rem;
       width: 100%;
       display: table;
+@include lg{
+  padding: 12px 10px;
+  width: 100%;
+  display: table;
 
+}
       @include mobile {
         padding: 10px 10px;
       }
@@ -461,6 +490,9 @@
 
       @include laptop {
         font-size: 13px;
+      }
+      @include lg{
+        font-size: 16px;
       }
 
       @include mobile {

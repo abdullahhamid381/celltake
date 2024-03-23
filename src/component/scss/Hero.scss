@@ -47,6 +47,13 @@ h1{
         align-items: center;
         gap: 0 10px;
         color: #237923;
+        @include lg{
+            display: flex;
+    align-items: center;
+    gap: 0 10px;
+    color: #237923;
+    padding-left: 200px;
+        }
         @include mobile{
             display: flex;
             align-items: center;
@@ -60,6 +67,9 @@ h1{
         display: flex;
         img{
             width: 15%;
+            @include lg{
+                width: 35%;
+            }
             @include mobile{
                 width: 30%;
             }

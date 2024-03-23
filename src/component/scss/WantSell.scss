@@ -125,7 +125,13 @@
       }
 
       .img {
-        @include lg {
+        @include lg{
+          margin-left: -65px;
+          margin-bottom: -10px;
+          width: 100%;
+      
+        }
+        @include mobile {
           margin-left: -47px;
           margin-bottom: -10px;
           width: 130%;
