@@ -7,6 +7,7 @@ export const SwiperNavButtons = () => {
   return (
     <div className="swiper-nav-btns">
       <button onClick={() => swiper.slidePrev()}>Prev</button>
+      <span>View more</span>
       <button onClick={() => swiper.slideNext()}>Next</button>
     </div>
   );

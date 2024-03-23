@@ -7,18 +7,20 @@ import Brand from './component/Brand'
 import PriceRange from './component/PriceRange'
 import Comparsion from './component/Comparsion'
 import Footer from './component/Footer'
+import TopSell from './component/TopSell'
 
 
 
 
 const App = () => {
+  
   return (
     <div>
       <Navbar/>
       <Hero/>
       <SearchMobile/>
    
- 
+ <TopSell/>
       <WantSell/>
       <Brand/>
       <PriceRange/>

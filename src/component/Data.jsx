@@ -4,7 +4,10 @@ import one from './pics/one.png'
 import vivo from './pics/vivo.png'
 import xia from './pics/xia.png'
 import google from './pics/google.png'
+// TOP SELLING MOBILE
 
+import iphonetop from './pics/iphonetop.png'
+import iphonelogo from './pics/Vector (3).png'
 import samsungtext from './pics/samsungtext.png'
 import samsungmobile from './pics/samsungmobile.png'
 import vivomobile from './pics/vivomobile.png'
@@ -56,6 +59,84 @@ export const PriceRangedata =[
     
 ]
 
+
+export const topsellbutton =[
+    {
+        h1:'Budget Phones',
+        class:'active'
+    },
+    {
+        h1:'Camera focused',
+    },
+    {
+        h1:'High Performance',
+    },
+    {
+        h1:'Luxury',
+    },
+    {
+        h1:'Gaming',
+    },
+    {
+        h1:'Large display',
+    },
+    {
+        h1:'Best mid range',
+    },
+    
+]
+
+export const topsellingmobiles=[
+    {
+        img:iphonetop,
+        icon:iphonelogo,
+        name:'iPhone 15 pro max',
+        price:'Rs 73,300'
+
+    },
+    {
+        img:iphonetop,
+        icon:iphonelogo,
+        name:'iPhone 15 pro max',
+        price:'Rs 73,300'
+
+    },
+    {
+        img:iphonetop,
+        icon:iphonelogo,
+        name:'iPhone 15 pro max',
+        price:'Rs 73,300'
+
+    },
+    {
+        img:iphonetop,
+        icon:iphonelogo,
+        name:'iPhone 15 pro max',
+        price:'Rs 73,300'
+
+    },
+    {
+        img:iphonetop,
+        icon:iphonelogo,
+        name:'iPhone 15 pro max',
+        price:'Rs 73,300'
+
+    },
+    {
+        img:iphonetop,
+        icon:iphonelogo,
+        name:'iPhone 15 pro max',
+        price:'Rs 73,300'
+
+    },
+    {
+        img:iphonetop,
+        icon:iphonelogo,
+        name:'iPhone 15 pro max',
+        price:'Rs 73,300'
+
+    },
+]
 
 
 
