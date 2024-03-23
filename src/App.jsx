@@ -1,13 +1,6 @@
 import React from 'react'
-import Navbar from './component/Navbar'
-import Hero from './component/Hero'
-import SearchMobile from './component/SearchMobile'
-import WantSell from './component/WantSell'
-import Brand from './component/Brand'
-import PriceRange from './component/PriceRange'
-import Comparsion from './component/Comparsion'
-import Footer from './component/Footer'
-import TopSell from './component/TopSell'
+import Home from './component/Home'
+
 
 
 
@@ -16,16 +9,7 @@ const App = () => {
   
   return (
     <div>
-      <Navbar/>
-      <Hero/>
-      <SearchMobile/>
-      <WantSell/>
- <TopSell/>
-    
-      <Brand/>
-      <PriceRange/>
-      <Comparsion/>
-      <Footer/>
+     <Home/>
     </div>
   )
 }
